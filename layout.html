@@ -1,0 +1,54 @@
+<header>
+    <h1>Logo</h1>
+    <nav>
+        <h3><a href="/one">one</a></h3>
+        <h3><a href="/two">two</a></h3>
+        <h3><a href="/three">three</a></h3>
+    </nav>
+</header>
+<content>
+    <aside>
+        <h2>Sidebar</h2>
+    </aside>
+    <main>
+        <h2>Content</h2>
+    </main>
+</content>
+<footer>
+    <h2>Footer</h2>
+</footer>
+
+<style>
+    header{
+        background-color: rgba(0,0,0,0.7);
+        display: flex;
+        justify-content: space-around;
+    }
+    nav{
+        display: flex;
+        width: 600px;
+        justify-content: space-around;
+    }
+    a{
+        text-decoration-line: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    content{
+        display: flex;
+        justify-content: space-between;
+    }
+    aside{
+        width: 250px;
+        position: fixed;
+    }
+    main{
+        width: calc(100% - 250px);
+    }
+    footer{
+        height: 60px;
+    }
+</style>
